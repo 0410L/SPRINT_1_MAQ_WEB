@@ -1,39 +1,81 @@
 *{
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 20px;
     box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+a{
+    text-decoration: none;
 }
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
     .header{
-        background: #000;
+        background: url(./images/header.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
     }
         .menu{
-            background: #2d4059;
             display: flex;
+            background: rgba(0, 0, 0,.0);
             flex-flow: row nowrap;
+            height: 100px
+            align-items:center;
+            text-align:center;
+            justify-content: center;
         }
             .logo{
-                background: #ea5455;
-                flex:1 1 auto;
+                
             }
+                .logo a{
+                    color:#343434;
+                    font-size: 20px
+                }
+                .logo a:hover{
+                    color:#f73f52;
+                }
             .nav{
-                background: #ea5455;
                 flex:5 1 auto;
+                
+                
             }
+                .nav a {
+                    color: #343434;;
+                    font-size: 15px;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover{
+                    color:#f73f52
+                }
             .social{
-                background: #ea5455;
-                flex:1 1 auto;
+                margin:auto;
+                display: flex;
+                justify-content: center;
+
+            
             }
-        .texto-principal{
-            background: #f07b3f;
+            .social a{
+                font-size: 18px;
+                color: #343434;;
+                padding: 0 5px;
+            }
+            .social a:hover{
+                color:#f73f52;
+            }
+            .texto-principal{
+            font-size: 10px;
+            text-align:center;
+            color:darkgoldenrod;
         }
             h1{
-                background: #ffd460;
+                background: rgba(0, 0, 0,.1);
             }
     .section{
         background: #000;
