@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    padding: 5px;
+    padding: 0px;
     box-sizing: border-box;
 }
 body{
@@ -12,6 +12,8 @@ a{
 .padre{
     display: flex;
     flex-flow: column nowrap;
+    padding-left: 80px;
+    padding-right: 80px;
 
 }
     .header{
@@ -21,122 +23,164 @@ a{
         background-size: cover;
         display: flex;
         flex-flow: column nowrap;
+        margin-left: 10px;
+        margin-right: 10px;
     }
         .menu{
             display: flex;
-            background: rgba(0, 0, 0,.0);
+            background: 0;
             flex-flow: row nowrap;
             align-items:center;
             text-align:center;
-            justify-content: space-around;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 80px;
         }
-        .logo{
-            flex: 1 1 auto;
-            
-        }
-            .logo a{
-            display: flex;
-            justify-content: flex-start;
-            
+            .logo{
+                margin:auto;
+                display: flex;
             }
+                .logo a{
+                display: flex;
+                }
+
             .nav{
                 flex:5 1 auto;
-                
-                
+
             }
                 .nav a {
                     color: #343434;;
                     font-size: 15px;
-                    padding: 0 4px;
-                    letter-spacing: 2px;
+                    padding: 0 40px;
+                    letter-spacing: 1px;
+
                 }
                 .nav a:hover{
                     color:#f73f52
+
                 }
             .social{
-                margin:auto;
                 display: flex;
-                justify-content: center;
 
-            
             }
             .social a{
                 font-size: 18px;
-                color: #343434;;
+                color: #343434;
                 padding: 0 5px;
             }
-            .social a:hover{
-                color:#f73f52;
-            }
-            .texto-principal{
-            text-align:center;
-            font-size: 10px;
-            font-family:'Times New Roman', Times, serif;
-            color:darkgoldenrod;
+
+        .texto-principal{
+        background: rgba(0, 0, 0,.1);
+        padding-top: 30px;
+        padding-bottom: 80px;
+        margin-left: 50px;
+        margin-right: 50px;
         }
-            h1{
-                background: rgba(0, 0, 0,.4);
-            }
+                h1{
+                text-align:center;
+                font-size: 25px;
+                font-family:'Times New Roman', Times, serif;
+                color:#ff6666;
+                }
+
+                h2{
+                    background-color: #ff6666;
+                }
     .section{
         display: flex;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        
     }
         .articulos{
-            background: rgb(187, 187, 187);
+            background: rgb(228, 228, 228);
             flex:2 1 auto;
-            display: flex;
+            display:flex;
             flex-flow: row wrap;
+            padding: 10px;
 
         }
             .article{
-                background: #1f6cb0;
-                flex:1 1 40%;
                 font-size: 13px;
-                letter-spacing: 1px;
-                margin: 10px 10px 0 0px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 0px;
                 flex:1 1 45%;
-                background: #ececec;
+                background: #ffffff;
+                text-align:justify;
+                padding: 10px;
+                margin: 5px;
                 
             }
-            p{
-                column-count:2;
-            }
-            .article img{
-                width: 100%;
-            }
-            h3{
-                color: #fff;
+                p{
+                 column-count:2;
+                 margin: 5px
+                }
+
+                 .article img{
+                    width: 100%;
+                    padding-bottom: 45px;
+                }
+
+                 h3{
+                color: rgb(255, 230, 0);
                 font-size: 13px;
-                padding: 10px 0;
+                padding: 10px 5px;
                 margin-top: -80px;
-            }
-            h2{
+                 }
+
+                h2{
                 font-size: 25px;
                 text-transform: uppercase;
-                padding: 0px 0 10px;
+                padding: 10px 5px;
                 color: #fff;
             }
 
             .navegacion{
-                background:0;
+                background: 0;
                 flex:1 1 100%;
+                padding-left: 10px;
+                padding-right: 10px;
                 text-align:center;
+                font-size: 12px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
             }
         .aside{
-            background: #f73f52;
+            background: 0;
+            background: rgb(228, 228, 228);
+            flex:2 1 auto;
+            display:flex;
+            flex-flow: row wrap;
+            padding-left: 20px;
+            padding-right:20px;
+            margin-left:10px;
         
         }
             .publicidad{
-                background: 0;
-                text-align:center;
-                
+            margin: 20px;
+            text-align:center;
             }
+
+            span{
+                font-size: 12px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+            }
+
     .footer{
-        background: rgb(192, 192, 192);
+        text-align:center;
+        margin-bottom: 10px;
     }
         .pie{
-            background: 0;
-            text-align:center;
+            background: rgb(192, 192, 192);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 12px
         }
+
 @media all and (max-width:1200px){
     .section{
         flex-direction: column;
@@ -145,7 +189,25 @@ a{
         flex-direction: column;
         height:auto;
     }
+    .nav a {
+        color: #343434;;
+        font-size: 15px;
+        padding: 0 5px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+    }
+    .aside{
+        margin-left:0px;
+    
+    }
+    .social{
+        padding-top: 20px;
+    }
+    .texto-principal{
+        font-size: 10px;
+        }
 }
+
 @media all and (max-width:600px){
     .articulos{
         flex-direction: column;
